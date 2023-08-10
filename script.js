@@ -23,14 +23,14 @@ async function checkWeather(city) {
     document.querySelector(".wind").innerHTML = data.current.wind_kph + " km/h";
 
     if (data.current.condition.text == "Partly cloudy") {
-      weatherIcon.src = "/images/clouds.png";
+      weatherIcon.src = "images/clouds.png";
     } else if (
       data.current.condition.text == "Sunny" ||
       data.condition.text == "Clear"
     ) {
-      weatherIcon.src = "/images/clear.png";
+      weatherIcon.src = "images/clear.png";
     } else if ((data.current.condition.text = "Mist")) {
-      weatherIcon.src = "/images/Mist.png";
+      weatherIcon.src = "images/Mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
