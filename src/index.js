@@ -1,6 +1,7 @@
 import Cloud from "./clouds.png";
 import Clear from "./clear.png";
 import Mist from "./mist.png";
+import "./style.css";
 
 const apiUrl =
   "http://api.weatherapi.com/v1/current.json?key=4d337d5311b94690bbe164121230508&q=";
@@ -34,7 +35,7 @@ async function checkWeather(city) {
     ) {
       weatherIcon.src = Clear;
     } else if ((data.current.condition.text = "Mist")) {
-      weatherIcon.src = Clear;
+      weatherIcon.src = Mist;
     }
 
     document.querySelector(".weather").style.display = "block";
