@@ -1,4 +1,3 @@
-const apiKey = "4d337d5311b94690bbe164121230508";
 const apiUrl =
   "http://api.weatherapi.com/v1/current.json?key=4d337d5311b94690bbe164121230508&q=";
 
